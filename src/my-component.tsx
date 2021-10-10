@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { FC } from "react";
 
 const StyledMyComponent = styled.div`
-  ${({ theme }: { theme: any }) => {
+  ${({ theme }: any) => {
     return `color: ${theme.primary.color}`;
   }}
 `;
