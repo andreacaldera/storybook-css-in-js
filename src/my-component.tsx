@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 import { FC } from "react";
 
 const StyledMyComponent = styled.div`
-  ${({ theme }) => {
+  ${({ theme }: { theme: any }) => {
     return `color: ${theme.primary.color}`;
   }}
 `;
