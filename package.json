@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "express": "^4.17.1",
     "rollup": "^2.55.1"
   }
