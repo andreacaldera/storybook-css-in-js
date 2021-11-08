@@ -1,5 +1,5 @@
+import { MyTheme } from "./theme";
+
 declare module "@emotion/react" {
-  export interface Theme {
-    primary: { color: string; background: string };
-  }
+  export interface Theme extends MyTheme {}
 }
