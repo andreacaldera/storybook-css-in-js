@@ -1,10 +1,5 @@
-import "styled-components";
+import { MyTheme } from "./theme";
 
-declare module "styled-components" {
-  export interface DefaultTheme {
-    primary: {
-      color: string;
-      background: string;
-    };
-  }
+declare module "@emotion/react" {
+  export interface Theme extends MyTheme {}
 }

@@ -1,7 +1,7 @@
 import { addDecorator } from "@storybook/react";
 import { withThemes } from "@react-theming/storybook-addon";
-import { theme, invertedTheme } from "../src/theme";
-import { ThemeProvider } from "styled-components";
+import { theme, jaegerTheme } from "../src/theme";
+import { ThemeProvider } from "emotion-theming";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -13,4 +13,4 @@ export const parameters = {
   },
 };
 
-addDecorator(withThemes(ThemeProvider, [theme, invertedTheme]));
+addDecorator(withThemes(ThemeProvider, [theme, jaegerTheme]));

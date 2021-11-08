@@ -1,9 +1,9 @@
-import { DefaultTheme } from "styled-components";
-
-export const theme: DefaultTheme = {
-  primary: { color: "lightgrey", background: "black" },
+export const theme = {
+  button: { color: "lightgrey", background: "black" },
 };
 
-export const invertedTheme = {
-  primary: { color: "black", background: "lightgrey" },
+export type MyTheme = typeof theme;
+
+export const jaegerTheme: MyTheme = {
+  button: { color: "black", background: "lightgrey" },
 };
